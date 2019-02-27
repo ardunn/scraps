@@ -1,0 +1,12 @@
+To force dark mode borders on MacOS
+
+edit info.plist in Application directory
+
+>> cd /Applications/SomeApp.app/
+>> vim Info.plist
+
+
+Paste into the body:
+
+    <key>NSRequiresAquaSystemAppearance</key>
+    <string>False</string>
