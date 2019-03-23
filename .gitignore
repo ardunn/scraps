@@ -45,6 +45,10 @@ nosetests.xml
 
 # Pycharm
 .idea/*
+.idea
 
 # log file from tests
 automatminer.log
+
+
+
