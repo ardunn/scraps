@@ -38,4 +38,7 @@ What to do:
 	export OMP_PROC_BIND=true
 	export OMP_PLACES=threads
 	export OMP_NUM_THREADS=17 (or whatever number you determined above)
-		
+
+5. Set your srun parameters according to 1/2/3. Make sure to set the total number of tasks equal to srun's --ntasks-per-node * --cpus-per-task. For example, in the above example, 
+	For sbatch:
+	-n 17 * 4 = 68		
