@@ -14,7 +14,7 @@ For srun:
 
 Number of cpus available:
   For MPI only, the number of CPUs is equivalent to the number of cores (e.g., for Cori, 68)
-  For MPI + OpenMP, the number of CPUs available can be set to 4* the number of physical cores, but is best with the number of physical cores
+  For MPI + OpenMP, the number of CPUs available can be set to 4* the number of physical cores, but is best with the number of physical cores (acc. NERSC)
 
 What to do:
 
@@ -33,6 +33,8 @@ What to do:
 		nmpi = 4
 		
 		cpt = 68/4 = 17
+		
+	Note: According to NERSC you might want to leave some cores (2-4 physical) free for OS running.
 
 4. On cori, export the following env vars:
 	export OMP_PROC_BIND=true
