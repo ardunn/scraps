@@ -1,0 +1,10 @@
+
+
+Run your process
+
+my_cmd
+
+Then: ctrl + Z
+Then: bg %1
+Then: disown -h %1
+
