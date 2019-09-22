@@ -8,3 +8,5 @@ Then: ctrl + Z
 Then: bg %1
 Then: disown -h %1
 
+
+Note you should redirect stdout AND stderr to a log file. If the process tries to write anything (out or err) to your terminal it will exit. 
