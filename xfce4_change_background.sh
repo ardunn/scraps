@@ -4,6 +4,9 @@
 
 # change lightdm
 sudo vim /etc/lightdm/slick-greeter.conf
+# make SURE the lines have spaces around the = sign
+# or run
+lightdm-settings
 
 # change main background
 nitrogen
