@@ -1,0 +1,19 @@
+
+
+
+# Look for policies in chrome under
+chrome://policy
+
+
+# If there is something there, intefering with incognito mode:
+defaults delete com.google.Chrome IncognitoModeAvailability
+
+
+# and/or:
+
+defaults delete com.google.Chrome [policy name]
+
+
+# if that doesn't work, remove unneeded extensions
+
+
