@@ -1,0 +1,3 @@
+# Note that each script must start with a shebang (e.g., #!/bin/sh) in order to not throw an exec error from run-parts
+
+/etc/update-motd.d/
