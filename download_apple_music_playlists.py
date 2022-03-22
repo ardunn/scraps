@@ -20,6 +20,11 @@ CLEAN_DIR = f"{BASE_DIR}/clean"
 # This script assumes playlists with more than 100 songs are broken into multiple
 # apple music playlists, e.g. favorites_1 and favorites_2 --> favorites
 # This merging is done after collation and download with freyr
+
+# These playlists keys can be whatever you want to call them
+# the values are the actual public URL of the playlist in apple music
+# your profile must be public for the playlists to be available by public link (i.e., not "/library/*" containing links
+# To get the right link, it's easiest just to use a phone to "share" the playlist and then copy the public link 
 AM_PLAYLISTS = {
         "all_favorites_1": "pl.u-xlyNqGVsJG4Xao",
         "all_favorites_2": "pl.u-2aoqq2YCGq6Vvk",
