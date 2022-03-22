@@ -1,0 +1,18 @@
+# Enabling autologin on ubuntu server 20.04 is useful if you want ssh to start
+# before anyone has to login on the local console (i.e., physical server machine)
+# this avoids problems with netplan (ubuntu network manager) not starting network interfaces if no one is logged in
+
+# from https://askubuntu.com/questions/1337658/enabling-autologin-in-ubuntu-20-04-02-lts-server-on-raspi
+# and from  https://askubuntu.com/questions/819117/how-can-i-get-autologin-at-startup-working-on-ubuntu-server-16-04-1/819154#819154
+
+$ sudo systemctl edit getty@.service
+
+# Then, inside the prompt, enter exactly the following
+ 
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty --noissue --autologin myusername %I $TERM
+Type=idle
+
+
+# Make sure to replace "myusername" with the username you want to login with

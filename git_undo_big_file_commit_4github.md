@@ -9,8 +9,7 @@ along with the file itself.
 Answer from: https://stackoverflow.com/questions/19573031/cant-push-to-github-because-of-large-file-which-i-already-deleted
 Locally delete large files.
 Commit the local deletes.
-Soft reset back X number of commits (for me it was 3): git reset
---soft HEAD~3.
+Soft reset back X number of commits (for me it was 3): git reset --soft HEAD~3.
 Then recommit all the changes together (AKA squash) git commit -m
 "New message for the combined commit"
 Push squashed commit.

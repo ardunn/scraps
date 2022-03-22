@@ -1,0 +1,2 @@
+# The location of the numbered message of the day scripts on PopOS is:
+/etc/update-motd.d
